@@ -12,7 +12,10 @@
         <li>Merek: <%= product.brand %></li>
         <li>Harga: <%= product.price %></li>
         <li>Warna: <%= product.color %></li>
-        <li>Category: <%= product.category %></li>
+        <li>
+            Category:<a href="/products?category=<%= product.category %> ">
+             <%= product.category %></a>
+            </li>
     </ul>
     
     <a href="<%= product._id %>/edit"> Edit</a>
